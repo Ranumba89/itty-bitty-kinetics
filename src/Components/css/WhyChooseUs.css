@@ -1,137 +1,149 @@
 .why-choose-us-container {
-    background-color: #93ffc3; /* Background color */
-    background-image: url('../../Images/7146445\ 1.png'); /* Add the background image */
-    background-size: cover; /* Scale the image to cover the entire container */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Avoid repeating the image */
-    padding: 80px 100px; /* Add padding for spacing */
-    border-radius: 20px; /* Rounded corners */
-    width: 1458px; /* Match Figma width */
-    margin: 0 auto; /* Center horizontally */
-    position: relative; /* For layering and additional positioning */
-    opacity: 0.9; /* Match the 10% opacity as per Figma */
-  }
-  
-  .why-choose-us-header h2 {
-    font-size: 48px; /* Match Figma font size */
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    color: #150049;
-    margin-bottom: 20px; /* Add spacing below the title */
-    text-align: center;
-  }
-  
-  .why-choose-us-header p {
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 40px; /* Add spacing below the paragraph */
-  }
-  
-  .learn-more-btn {
-    background-color: #a8ffcf;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    border-radius: 20px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto; /* Center the button */
-  }
-  
-  .why-trust-us h3 {
-    font-size: 24px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 40px;
-    color: #150049;
-  }
-  
-  .trust-cards {
-    display: grid; /* Use grid layout for the inner sections */
+  background-color: #93ffc3; /* Background color */
+  background-image: url("../../Images/7146445\ 1.png"); /* Add the background image */
+  background-size: cover; /* Scale the image to cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Avoid repeating the image */
+  /* padding: 80px 100px;  */
+  border-radius: 20px; /* Rounded corners */
+  max-width: 100vw; /* Match Figma width */
+  min-width: 100%;
+  margin: 0px -126px;
+  position: relative; /* For layering and additional positioning */
+  opacity: 0.9; /* Match the 10% opacity as per Figma */
+  padding: 10px;
+}
+
+.why-choose-us-header h2 {
+  font-size: 48px; /* Match Figma font size */
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  color: #150049;
+  margin-bottom: 20px; /* Add spacing below the title */
+  text-align: center;
+}
+
+.why-choose-us-header p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px; /* Add spacing below the paragraph */
+}
+
+.learn-more-btn {
+  background-color: #a8ffcf;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Center the button */
+}
+
+.why-trust-us h3 {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  color: #150049;
+}
+
+.trust-cards {
+  display: grid; /* Use grid layout for the inner sections */
   grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
   gap: 30px; /* Spacing between content inside the sections */
-  width: 1072px; /* Match Figma width */
-  height: 428px; 
-  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  width: 1072px;
+  height: 428px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Semi-transparent white background */
   border-radius: 58px; /* Rounded corners for the whole container */
   padding: 40px; /* Internal padding for spacing */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   margin: 40px auto; /* Center horizontally and add spacing */
   position: relative;
-  }
-  
-  .trust-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; /* Center-align content */
-    text-align: center; /* Center-align text */
-    position: relative;
-    width: 278px;
-    height: auto; /* Let height adjust dynamically */
-    padding: 20px; /* Add spacing inside the card */
-  }
-  .trust-card-icon {
-    width: 66px; /* Match the image size */
-    height: 72px; /* Match the image size */
-    margin-bottom: 10px; /* Add spacing below the image */
-    /* object-fit: contain;  */
-  }
-  .trust-us-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the image and title */
-    text-align: center;
-    margin-bottom: 20px; /* Space between the header and the trust cards */
-    
-  }
-  .trust-card h4 {
-    font-family: 'Poppins', sans-serif; /* Font family */
-    font-weight: 700; /* Bold */
-    font-size: 20px; /* Font size */
-    color: #150049; /* Text color */
-    margin-bottom: 10px; /* Space below the title */
-  }
-  
-  .trust-card p {
-    font-family: 'Poppins', sans-serif; /* Font family */
-    font-weight: 400; /* Regular font weight */
-    font-size: 13px; /* Match Figma font size */
-    line-height: 24.57px; /* Match Figma line height */
-    color: #000000; /* Text color */
-    text-align: left; /* Align text to the left */
-    width: 278px; /* Match Figma width */
-    height: 175px; /* Match Figma height */
-  }
-  .trust-card::after {
-    content: "";
-    width: 1px; /* Divider width */
-    height: 100%; /* Full height of the card */
-    background-color: #e0e0e0; /* Light grey divider color */
-    position: absolute; /* Position relative to the card */
-    right: -15px; /* Offset the divider slightly */
-    top: 0; /* Start at the top of the card */
-  }
-  
-  .trust-card:last-child::after {
-    display: none; /* Remove divider for the last card */
-  }
+}
+#thirdRow {
+  grid-template-columns: repeat(1, 1fr); /* Three equal-width columns */
+  justify-content: center;
+  align-items: center;
+  width: 448px;
+  display: flex;
+  flex-direction: column;
+}
+.trust-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /* Center-align content */
+  text-align: center; /* Center-align text */
+  position: relative;
+  width: 278px;
+  height: auto; /* Let height adjust dynamically */
+  padding: 20px; /* Add spacing inside the card */
+}
+.trust-card-icon {
+  width: 66px; /* Match the image size */
+  height: 72px; /* Match the image size */
+  margin-bottom: 10px; /* Add spacing below the image */
+  /* object-fit: contain;  */
+}
+.trust-us-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the image and title */
+  text-align: center;
+  margin-bottom: 20px; /* Space between the header and the trust cards */
+}
+.trust-card h4 {
+  font-family: "Poppins", sans-serif; /* Font family */
+  font-weight: 700; /* Bold */
+  font-size: 20px; /* Font size */
+  color: #150049; /* Text color */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.trust-card p {
+  font-family: "Poppins", sans-serif; /* Font family */
+  font-weight: 400; /* Regular font weight */
+  font-size: 13px; /* Match Figma font size */
+  line-height: 24.57px; /* Match Figma line height */
+  color: #000000; /* Text color */
+  text-align: left; /* Align text to the left */
+  width: 278px; /* Match Figma width */
+  height: 175px; /* Match Figma height */
+}
+.trust-card::after {
+  content: "";
+  width: 1px; /* Divider width */
+  height: 100%; /* Full height of the card */
+  background-color: #e0e0e0; /* Light grey divider color */
+  position: absolute; /* Position relative to the card */
+  right: -15px; /* Offset the divider slightly */
+  top: 0; /* Start at the top of the card */
+}
+
+.trust-card:last-child::after {
+  display: none; /* Remove divider for the last card */
+}
 
 .trust-card:not(:last-child)::after {
-    content: ""; /* Divider between cards */
-    width: 1px; /* Thin vertical line */
-    height: 100%; /* Full height of the container */
-    background-color: #e0e0e0; /* Light grey divider color */
-    position: absolute;
-    top: 0; /* Start at the top of the section */
-    right: 0; /* Position at the right edge */
-  }
-  
+  content: ""; /* Divider between cards */
+  width: 1px; /* Thin vertical line */
+  height: 100%; /* Full height of the container */
+  background-color: #e0e0e0; /* Light grey divider color */
+  position: absolute;
+  top: 0; /* Start at the top of the section */
+  right: 0; /* Position at the right edge */
+}

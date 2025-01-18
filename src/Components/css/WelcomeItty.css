@@ -1,56 +1,73 @@
 .welcome-container {
-    display: grid; /* Use grid for precise layout control */
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    align-items: center; /* Vertically center content */
-    background-color: #93FFC3; /* Background color */
-    border-radius: 28px; /* Rounded corners */
-    width: 1189px; /* Match the Figma width */
-    height: 308.76px; /* Match the Figma height */
-    margin: 40px auto; /* Center horizontally */
-    padding: 58px; /* Add padding for inner spacing */
+  display: grid; /* Use grid for precise layout control */
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  align-items: center; /* Vertically center content */
+  background-color: #93ffc3; /* Background color */
+  border-radius: 28px; /* Rounded corners */
+  width: 100%; /* Match the Figma width */
+  /* max-width: 1188px; */
+  height: 308.76px; /* Match the Figma height */
+  margin-top: 30px;
+}
+
+.welcome-left {
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  /* width: 393px;  */
+  height: 308.76px; /* Match Figma height */
+}
+
+.welcome-left img {
+  max-width: 100%; /* Ensure the image scales properly */
+  max-height: 100%; /* Ensure the image stays within its container */
+  object-fit: contain; /* Maintain aspect ratio and fit inside */
+}
+
+.welcome-right {
+  display: flex;
+  flex-direction: column; /* Stack header and content */
+  justify-content: center; /* Vertically center the text */
+  align-items: flex-start; /* Align to the left */
+  margin-left: 30px; /* Add spacing between the image and text */
+  max-width: 543px; /* Auto width */
+}
+
+.welcome-header {
+  font-family: "Poppins", sans-serif; /* Font family */
+  font-weight: 800; /* Bold */
+  font-size: 35px; /* Font size */
+  line-height: 39.9px; /* Line height */
+  color: #000000; /* Text color */
+  margin-bottom: 14px; /* Spacing below the header */
+  text-align: left;
+  /* width: 543px;  */
+}
+
+.welcome-content {
+  width: 484px; /* Match Figma width */
+  height: 115px; /* Match Figma height */
+  font-family: "Poppins", sans-serif; /* Font family */
+  font-weight: 400; /* Regular font weight */
+  font-size: 15px; /* Font size */
+  line-height: 24.9px; /* Line height */
+  color: #000000; /* Text color */
+  text-align: left; /* Align text to the left */
+  margin-top: 10px; /* Add spacing from the header */
+}
+.welcome-animation {
+  max-width: 300px; /* Adjust size as needed */
+  animation: fade 2s ease-in-out infinite; /* Optional smooth transition */
+}
+
+/* @keyframes fade {
+  0% {
+    opacity: 0;
   }
-  
-  .welcome-left {
-    display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center; /* Center image vertically */
-    width: 393px; /* Match Figma width */
-    height: 308.76px; /* Match Figma height */
+  50% {
+    opacity: 1;
   }
-  
-  .welcome-left img {
-    max-width: 100%; /* Ensure the image scales properly */
-    max-height: 100%; /* Ensure the image stays within its container */
-    object-fit: contain; /* Maintain aspect ratio and fit inside */
+  100% {
+    opacity: 0;
   }
-  
-  .welcome-right {
-    display: flex;
-    flex-direction: column; /* Stack header and content */
-    justify-content: center; /* Vertically center the text */
-    align-items: flex-start; /* Align to the left */
-    margin-left: 30px /* Add spacing between the image and text */
-  }
-  
-  .welcome-header {
-    font-family: 'Poppins', sans-serif; /* Font family */
-    font-weight: 800; /* Bold */
-    font-size: 35px; /* Font size */
-    line-height: 39.9px; /* Line height */
-    color: #000000; /* Text color */
-    margin-bottom: 14px; /* Spacing below the header */
-    width: 543px; /* Auto width */
-  }
-  
-  .welcome-content {
-    width: 484px; /* Match Figma width */
-    height: 115px; /* Match Figma height */
-    font-family: 'Poppins', sans-serif; /* Font family */
-    font-weight: 400; /* Regular font weight */
-    font-size: 15px; /* Font size */
-    line-height: 24.9px; /* Line height */
-    color: #000000; /* Text color */
-    text-align: left; /* Align text to the left */
-    margin-top: 10px; /* Add spacing from the header */
-  }
-  
+} */

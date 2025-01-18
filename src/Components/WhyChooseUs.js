@@ -29,6 +29,11 @@ const WhyChooseUs = () => {
       </div>
 
       <div className="why-trust-us">
+        <p>
+          At Itty Bitty Kinetics Therapy Group Inc., we are dedicated to
+          providing personalized, high-quality care for your child’s
+          developmental needs.
+        </p>
         <h3 className="trust-us-header">Here's why families trust us</h3>
         <div className="trust-cards">
           {/* Row 1 */}
@@ -70,9 +75,9 @@ const WhyChooseUs = () => {
               supportive environment.
             </p>
           </div>
-          </div>
-          {/* Row 2 */}
-          <div className="trust-cards">
+        </div>
+        {/* Row 2 */}
+        <div className="trust-cards">
           <div className="trust-card">
             <img
               src={homeTherapy}
@@ -114,10 +119,9 @@ const WhyChooseUs = () => {
               immediate and long-term growth.
             </p>
           </div>
-          </div>
-          {/* Row 3 */}
-          <div className="trust-cards">
-
+        </div>
+        {/* Row 3 */}
+        <div className="trust-cards" id="thirdRow">
           <div className="trust-card">
             <img
               src={provenResults}
