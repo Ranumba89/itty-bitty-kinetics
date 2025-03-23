@@ -1,0 +1,21 @@
+{
+  "name": "itty-consultation-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "deploy": "gcloud run deploy itty-consultation-server --source . --region us-central1 --allow-unauthenticated"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "body-parser": "^1.20.3",
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "googleapis": "^105.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

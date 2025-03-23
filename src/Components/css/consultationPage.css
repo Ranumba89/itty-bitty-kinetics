@@ -1,0 +1,48 @@
+.consultation-page {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.consultation-form label {
+  font-weight: bold;
+}
+
+.consultation-form input,
+.consultation-form button {
+  padding: 10px;
+  font-size: 16px;
+}
+.submit-button-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button vertically if needed */
+  margin-top: 20px; /* Adds spacing above the button */
+}
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.reservation-item:hover {
+  background-color: #0056b3;
+}

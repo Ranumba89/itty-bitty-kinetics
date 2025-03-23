@@ -1,0 +1,48 @@
+.OT-container {
+  margin-top: 108px;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 1527px;
+  height: 857px;
+  border-radius: 28px;
+  background: #93ffc3;
+}
+
+.OT-leftside {
+  width: 466px;
+  height: 345px;
+  top: 1359px;
+  left: 197px;
+  gap: 0px;
+  border-radius: 65px;
+  opacity: 0px;
+  background: #ffcfa8;
+  margin-left: 154px;
+  margin-top: 318px;
+}
+
+.OT-rightside {
+  margin-top: 163px;
+  margin-left: 86px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+
+}
+
+.OT-header {
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 39.9px;
+  text-align: left;
+  color: #000000;
+}
+.OT-content {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24.9px;
+  text-align: left;
+}

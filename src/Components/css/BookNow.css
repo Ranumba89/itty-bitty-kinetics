@@ -1,0 +1,48 @@
+.book-now-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  max-width: 100vw;
+  opacity: 0px;
+  margin: 0px -126px;
+  /* margin-top: 208px; */
+  background-color: #93ffc3;
+  padding: 72px 0px;
+
+}
+
+.book-now-header {
+  display: flex;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 39.9px;
+  text-align: left;
+  /* margin: 85px 670px 15px 573px; */
+  margin-bottom: 15px;
+}
+
+.book-now-content {
+  display: flex;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24.9px;
+  text-align: center;
+  max-width: 559px;
+  margin-bottom: 35px;
+}
+
+.book-now-btn{
+  width: fit-content;
+  border-radius: 14px;
+  font-weight: 600;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 13px;
+}

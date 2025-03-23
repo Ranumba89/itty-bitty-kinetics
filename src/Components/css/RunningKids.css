@@ -1,0 +1,38 @@
+/* .running-video {
+    position: absolute;
+    bottom: 10%; 
+    left: -200px;
+    width: 250px;
+    z-index: 100;
+    animation: runAcross 4s linear forwards;
+  }
+  
+  @keyframes runAcross {
+    0% {
+      left: -200px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+   */
+
+  .running-gif {
+    position: absolute;
+    bottom: -200px; /* Adjust to fine-tune position */
+    left: -200px; /* Start off-screen */
+    width: 640px; /* Adjust based on GIF size */
+    z-index: 100;
+    animation: runAcross 4s linear forwards;
+    transform: scaleX(-1);
+  }
+  
+  @keyframes runAcross {
+    0% {
+      left: -200px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  

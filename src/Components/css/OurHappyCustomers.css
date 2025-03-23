@@ -1,0 +1,110 @@
+.happy-customers-container {
+  width: 1314px;
+  height: 606px;
+  border-radius: 28px;
+  opacity: 0px;
+  background: rgba(147, 255, 195, 1);
+  margin-top: 153px;
+  position: relative; /* Allow absolute positioning for arrows */
+}
+.customers-header {
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 39.9px;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+  /* flex-direction: column; */
+}
+
+.customer-cards {
+  display: flex;
+  justify-content: center;
+  gap: 44.94px;
+}
+.customers-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.arrow-container {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  padding: 0px 161px ;
+  margin-top: 65px;
+}
+
+.left-arrow {
+  bottom: 10px;
+  left: 10px; /* Move the left arrow inside the container */
+  /* position: absolute; */
+}
+
+.right-arrow {
+  bottom: 10px;
+
+  right: 10px; /* Move the right arrow inside the container */
+  /* position: absolute; */
+}
+
+.arrow {
+  cursor: pointer;
+  width: 54px;
+  height: 54px;
+}
+
+.cc {
+  position: relative;
+  max-width: 289.48px;
+  max-height: 303.43px;
+  min-width: 289.48px;
+  min-height: 303.43px;
+  border-radius: 24.41px;
+  background: rgba(22, 122, 67, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 15px;
+  box-sizing: border-box;
+  gap: 18px;
+}
+.cc-quote {
+  font-family: Poppins;
+  font-size: 13.95px;
+  font-weight: 400;
+  line-height: 15.9px;
+  color: rgba(252, 252, 252, 1);
+}
+.cc-name {
+  display: flex;
+  align-self: flex-start;
+  font-family: Poppins;
+  font-size: 17.44px;
+  font-weight: 700;
+  line-height: 19.88px;
+  color: rgba(252, 252, 252, 1);
+}
+
+.cc-2 {
+  width: 289.48px;
+  height: 303.43px;
+  border-radius: 24.41px;
+  background: rgba(255, 207, 168, 1);
+}
+
+.cc-3 {
+  width: 289.48px;
+  height: 303.43px;
+  border-radius: 24.41px;
+  background: rgba(11, 5, 0, 0.62);
+}
+.img-1 {
+  width: 148.23px;
+  height: 151.72px;
+  border-radius: 75.86px;
+}

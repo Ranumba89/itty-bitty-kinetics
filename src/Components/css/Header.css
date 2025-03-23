@@ -5,6 +5,7 @@
   top: 0; /* Aligns it to the top */
   left: 0;
   width: 100%; /* Full width */
+
 }
 .header-container {
     display: grid;
@@ -13,13 +14,14 @@
     position: relative;
     background: white;
     margin: 0px -126px;
-    padding: 0px 25px;
+    padding: 10px 25px;
+    /* border: 10px solid #A8D8FF; */
   }
   
   /* Logo styling */
   .header-logo {
-    aspect-ratio: 1 / 1;
-    height: 100px;
+    /* aspect-ratio: 1 / 1; */
+    height: 125px;
     justify-self: start;
   }
   
@@ -41,16 +43,21 @@
   }
   
   /* Right-side container styling */
-  .rightSide-contianer {
+  .rightSide-container {
     display: flex;
     width: 260px;
     height: 38px;
     gap: 14px;
     justify-self: flex-end;
   }
-  
+  .hamburger-menu {
+    display: flex;
+   /* flex-direction: row-reverse; */
+    cursor: pointer;
+    font-size: 24px;
+  }
   /* Search container styling */
-  .search-contianer {
+  .search-container {
     background-color: #778A7F1F;
     border-radius: 31px;
     display: flex;
@@ -62,11 +69,169 @@
   }
   
   /* Book Now button styling */
-  .bookNow-contianer {
-    background-color: #A8FFCF;
+  .bookNow-container {
+    background-color: #A8D8FF;
     border-radius: 14px;
     display: flex;
     align-items: center;
     padding: 9px 19px;
   }
   
+  /* Navigation links styling */
+  .nav-container a,
+  .nav-services {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Default color */
+    transition: color 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  /* Hover effect */
+  .nav-container a:hover,
+  .nav-services:hover {
+    color: #FFA8D8;
+    cursor: pointer;
+  }
+  
+  /* Active tab (remains blue when clicked or scrolled to) */
+  .active {
+    color: #FFA8D8 !important;
+    font-weight: bold;
+  }
+  /* Dropdown styling */
+.dropdown-menu {
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+  background: #FFA8D8;
+  color: white;
+}
+.nav-item-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+.dropdown-navlink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  gap: 10px;
+  position: relative;
+}
+.services-dropdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #93FFC3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.mobile-nav-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item-icon {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chevron-icon {
+  transition: transform 0.3s;
+}
+
+.chevron-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.hamburger-menu {
+  padding: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .nav-container {
+    display: none; 
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .rightSide-container {
+    display: none;
+  }
+
+  .header-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .header-logo {
+    height: 88px;
+  }
+}
+

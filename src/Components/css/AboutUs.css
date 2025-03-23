@@ -1,0 +1,73 @@
+.aboutUs-container {
+  position: relative;
+  min-height: 120vh;
+  min-width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+  padding-top: 129px;
+}
+
+.content-container {
+  position: absolute;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 121px;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 141px;
+  margin-bottom: 213px;
+}
+.founder-header {
+  display: flex;
+  white-space: nowrap;
+  font-family: Poppins;
+  font-size: 68px;
+  font-weight: 600;
+  line-height: 77.52px;
+  text-align: left;
+  color: #150049;
+  margin-bottom: 17px;
+}
+.founder-name {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 41.04px;
+  text-align: left;
+  color: #150049;
+  margin-bottom: 3px;
+}
+.founder-title {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.24px;
+  text-align: left;
+  color: #150049;
+  margin-bottom: 20px;
+}
+
+.founder-description {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.62px;
+  text-align: left;
+  color: #150049;
+}
+.right-content {
+  display: flex;
+  justify-content: center;
+}
+
+.about-us-img {
+  position: relative;
+  top: -100px;
+  aspect-ratio: 1/1;
+  height: 631px;
+  border-radius: 156px;
+}

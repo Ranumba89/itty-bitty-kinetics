@@ -1,4 +1,4 @@
-.we-do-container {
+.we-do-top-container {
   background: linear-gradient(
     96.88deg,
     rgba(160, 206, 243, 0.32) -4.14%,
@@ -27,16 +27,17 @@
   opacity: 0px;
   background: rgba(26, 196, 162, 0.35);
 }
-h4 {
-  font-family: Poppins;
+.we-do-header {
+  font-family: "Poppins", serif;
   font-size: 64px;
   font-weight: 400;
   line-height: 72.96px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  color: #150049;
+  font-weight: 800;
+  margin: 40px 0px;
 }
-p {
+.occ-content p {
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
@@ -64,7 +65,7 @@ left: 231px;
   background: rgba(255, 255, 255, 1);
 }
 .occ-header {
-  font-family: Raleway;
+  font-family: "Poppins", serif;
   font-size: 80px;
   font-weight: 200;
   line-height: 76.8px;
@@ -76,6 +77,7 @@ left: 231px;
   display: flex;
   align-items: flex-end;
   width: 100%;
+  /* position: relative; */
 }
 .bottom-left {
   background: rgba(147, 255, 195, 1);
@@ -85,18 +87,135 @@ left: 231px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: relative;
+}
+.bottom-right {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 761px;
+  height: 261px;
+  border-radius: 42px;
+  background: linear-gradient(
+    180deg,
+    rgba(207, 207, 206, 0.43) 0%,
+    rgba(147, 255, 195, 0.43) 100%
+  );
+  gap: 37px;
+  margin-left: 25px;
 }
 .PT {
-  font-family: Poppins;
+  font-family: "Poppins", serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 37.44px;
   margin: 30px 42px 0px 0px;
   color: black;
 }
-.Pt-img{
-    border-radius: 44px 44px 0px 0px;
-    background: rgba(255, 255, 255, 0.68);
-    align-self: flex-start;
+.ST-header {
+  font-family: "Poppins", serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 51.84px;
+  margin: 0px;
+  color: black;
+  text-align: left;
+}
+.st-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 74px;
+  justify-content: center;
+  gap: 10px;
+}
+.ST-content {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.04px;
+  text-align: left;
+  color: rgba(128, 128, 128, 1);
+  margin-left: 12px;
+}
+.PT-pic-container {
+  width: 225px;
+  height: 185px;
+  border-radius: 44px 44px 0px 0px;
+  background: rgba(255, 255, 255, 0.68);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.Pt-img {
+  border-radius: 44px 44px 0px 0px;
+  align-self: flex-start;
+  bottom: 0px;
+  position: absolute;
+  left: 0px;
+}
 
+.St-img {
+  position: absolute;
+  width: 214px;
+  height: 279px;
+  align-self: flex-start;
+  border-radius: 46px 43px 0px 0px;
+  background: rgba(160, 206, 243, 1);
+  margin-left: 84px;
+  bottom: 0px;
+  left: 0px;
+}
+@media (max-width: 768px) {
+  .we-do-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .we-do-top-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    /* display: flex; */
+    /* height: 250px; */
+  }
+  .occ-header {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 26.25px;
+    line-height: 96%;
+    letter-spacing: 0%;
+  }
+.we-do-occupational-therapy {
+  background: linear-gradient(
+    96.88deg,
+    rgba(160, 206, 243, 0.32) -4.14%,
+    rgba(147, 255, 195, 0.32) 107.6%
+  );
+  border-radius: 14.24px;
+  }
+  .we-do-physical-therapy{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .Pt-img {
+  border-radius: 44px 44px 0px 0px;
+  align-self: flex-start;
+  top: 0px;
+  position: absolute;
+  left: 0px;
+}
+.PT-pic-container {
+  /* width: 225px;
+  height: 185px; */
+  border-radius: 44px 44px 0px 0px;
+  background: rgba(255, 255, 255, 0.68);
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+}
 }

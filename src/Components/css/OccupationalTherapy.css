@@ -1,0 +1,199 @@
+.occupational-therapy-container {
+  position: relative;
+  
+}
+.occupational-therapy-intro-container {
+  position: relative;
+  display: grid;
+  max-width: 1137px;
+  grid-template-columns: 481px 541px;
+  margin-top: 51px;
+  margin-bottom: 53px;
+  gap: 120px;
+}
+
+.occupational-therapy-leftside {
+  display: flex;
+  flex-direction: column;
+}
+
+.occupational-therapy-header {
+  font-family: Poppins;
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 79.8px;
+  text-align: left;
+  color: #150049;
+  margin-bottom: 21px;
+}
+.occupational-therapy-content {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.56px;
+  text-align: left;
+  margin-bottom: 48px;
+}
+.occupational-therapy-book-btn {
+  /* width: 236px; */
+  width: fit-content;
+  /* height: 43px; */
+  border-radius: 14px;
+  font-weight: 600;
+  background: #a8ffcf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 13px;
+}
+
+.occupational-therapy-rightside {
+  position: relative;
+}
+.occupational-therapy-background {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 65px;
+  background: #93ffc3;
+  max-width: 374.95px;
+  width: 374.95px;
+  max-height: 491.9px;
+  position: relative; */
+  /* left: -134px;
+  bottom: -13.39px; */
+  width: 374.95px;
+  height: 491.9px;
+  border-radius: 65px;
+  background: #93ffc3;
+  position: absolute;
+  left: 134px;
+  top: -31px;
+}
+.OT-pic {
+  width: 541px;
+  height: 496.36px;
+  position: absolute;
+  left: 0;
+  top: -31px;
+}
+
+.occupational-therapy-middle-container {
+  /* margin-top: 53.31px; */
+  /* display: grid;
+  grid-template-columns: auto auto;
+  max-width: 100vw;
+  min-width: 100vw;
+  width: 100%; */
+  /* width: 1527px; */
+  /* height: 776px; */
+  /* border-radius: 28px; */
+  /* background: #93ffc3;
+  padding: 10px;
+  margin: 0px -126px; */
+  display: grid;
+  grid-template-columns: 552px auto;
+  max-width: 100vw;
+  min-width: 100vw;
+  height: 776px;
+  position: relative;
+  margin: 0px -126px;
+  margin-top: 195px;
+  background: #93ffc3;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+.occupational-therapy-middle-leftside {
+  /* margin-top: 101px;
+  margin-left: 91px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.occupational-therapy-middle-righside {
+  /* margin-top: 101px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23.24px;
+  text-align: left;
+  /* margin-left: 119px; */
+  gap: 23.24px;
+  max-width: 536px;
+  align-items: center;
+}
+.occupational-therapy-middle-righside p {
+  margin: 0;
+}
+.occupational-therapy-signs-container {
+  position: relative;
+  margin-top: 164px;
+  margin-bottom: 208px;
+  display: grid;
+  grid-template-columns: 616px auto;
+  gap: 82px;
+  max-width: 100vw;
+
+}
+.occupational-therapy-leftside-header {
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 46.2px;
+  text-align: left;
+  color: #150049;
+}
+.specialty-item {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17.1px;
+  text-align: left;
+  color: #000000;
+}
+.signs-list {
+  padding: 0;
+}
+.occupational-therapy-signs-rightside {
+  position: relative;
+
+}
+.occupational-therapy-signs-background {
+  border-radius: 61px;
+  width: 452px;
+  height: 438px;
+  background: #93ffc3;
+  position: absolute;
+  bottom: 76px;
+}
+
+.rightside-pic {
+  position: absolute;
+  left: 0;
+  bottom: 76px;
+  border-radius: 0px 0px 0px 61px;
+}
+.skeleton-right-grid-circle1{
+  position: absolute;
+  border: 3px solid red;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  width: 928px;
+  right: -300px;
+  top: -100px;
+  
+}
+.skeleton-right-grid-circle2{
+  border: 3px solid #93FFC380;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  width: 460px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}

@@ -55,4 +55,12 @@
     width: 300px; /* Adjust as per your design */
     border-radius: 20px; /* Optional for rounded corners */
   }
-  
+@media (max-width: 768px) {
+  .aop-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .aop-right{
+    
+  }
+}

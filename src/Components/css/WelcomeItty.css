@@ -7,7 +7,8 @@
   width: 100%; /* Match the Figma width */
   /* max-width: 1188px; */
   height: 308.76px; /* Match the Figma height */
-  margin-top: 30px;
+  margin-top: 100px;
+  position: relative;
 }
 
 .welcome-left {
@@ -16,12 +17,16 @@
   align-items: center; /* Center image vertically */
   /* width: 393px;  */
   height: 308.76px; /* Match Figma height */
+  position: relative;
 }
 
 .welcome-left img {
+  top: -62px;
   max-width: 100%; /* Ensure the image scales properly */
   max-height: 100%; /* Ensure the image stays within its container */
   object-fit: contain; /* Maintain aspect ratio and fit inside */
+  position: absolute;
+  min-height: 309px;
 }
 
 .welcome-right {
@@ -71,3 +76,74 @@
     opacity: 0;
   }
 } */
+@media (max-width: 768px) {
+  .welcome-section {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  .welcome-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; */
+    /* width: 100vw;
+    max-width: 100vw; */
+    /* height: 100%;
+    padding: 20px 26px; */
+    /* left: 50px; */
+    /* overflow-x: hidden; */
+  }
+  .welcome-left {
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    /* width: 100%;
+    height: 100%; */
+    /* position: absolute; */
+    /* top: -300px; */
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .welcome-animation {
+    width: 90%;
+    max-width: 250px;
+  }
+  .welcome-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    /* margin-top: 20px; */
+    max-width: 100%;
+  }
+  .welcome-header {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 113%;
+  }
+  .welcome-content {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 166%;
+    flex-shrink: 2;
+    margin-top: 15px;
+  }
+}

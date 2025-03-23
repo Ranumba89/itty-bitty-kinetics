@@ -1,13 +1,41 @@
 .App {
-  position: relative;
-  text-align: center;
-  margin: 0px 126px;
-  gap: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  /* 
-  width: 100%;
-  max-width: 1188px; */
+  align-items: center;
+  margin: 0px 126px;
+}
+.home-container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+}
+/* Fade-in effect for pages */
+.page-container {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-out forwards;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .App {
+    margin: 0;
+  }
+  .home-container {
+    justify-content: center;
+  }
+
+}
