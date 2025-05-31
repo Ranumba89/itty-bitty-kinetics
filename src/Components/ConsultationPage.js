@@ -17,6 +17,7 @@ const ConsultationPage = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState();
+  const [timeSlots, setTimeSlots] = useState([]);
   const serverURL =
     "https://itty-consultation-server-784119790009.us-central1.run.app";
   // const serverURL = "http://localhost:5001";
@@ -26,6 +27,7 @@ const ConsultationPage = () => {
     setFormData({ ...formData, [key]: value });
 
     if (key === "preferredDay") {
+      updateTimeSlots(value);
       getEvents(value);
     }
   };
@@ -97,27 +99,59 @@ const ConsultationPage = () => {
   ) {
     const slots = [];
     let currentMinutes = startHour * 60;
-
     const endMinutes = endHour * 60;
 
-    while (currentMinutes <= endMinutes) {
+    while (currentMinutes < endMinutes) {
       const hour = Math.floor(currentMinutes / 60);
       const minutes = currentMinutes % 60;
 
-      // Convert to 12-hour format
       const hour12 = ((hour + 11) % 12) + 1;
       const ampm = hour >= 12 ? "PM" : "AM";
 
-      const formatted = `${hour12}:${minutes
+      // Only pad hours if it's a single digit
+      const formattedHour = hour12 < 10 ? `0${hour12}` : hour12.toString();
+
+      const formattedTime = `${formattedHour}:${minutes
         .toString()
         .padStart(2, "0")} ${ampm}`;
-      slots.push(formatted);
+      slots.push(formattedTime);
 
       currentMinutes += intervalMinutes;
     }
 
     return slots;
   }
+
+  const checkReserved = (time) => {
+    const reserved = events.some((event) => {
+      const eventTime = new Date(event.start.dateTime).toLocaleTimeString(
+        "en-US",
+        {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: true,
+        }
+      );
+      return time === eventTime;
+    });
+    return reserved;
+  };
+
+  const updateTimeSlots = (value) => {
+    const [year, month, day] = value.split("-");
+    const date = new Date(year, month - 1, day);
+    const dayOfWeek = date.getDay();
+
+    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+
+    console.log("IS Weekend? ", date, dayOfWeek);
+
+    setTimeSlots(() => {
+      return isWeekend
+        ? generateTimeSlots12HrFormat(8, 12, 20)
+        : generateTimeSlots12HrFormat(16, 19, 20);
+    });
+  };
 
   return (
     <div style={{ maxWidth: "600px", margin: "0 auto", padding: "20px" }}>
@@ -202,19 +236,8 @@ const ConsultationPage = () => {
                 marginTop: "5px",
               }}
             >
-              {generateTimeSlots12HrFormat(16, 19, 20).map((time, index) => {
-                const reserved = events.some((event) => {
-                  const eventTime = new Date(
-                    event.start.dateTime
-                  ).toLocaleTimeString("en-US", {
-                    hour: "2-digit",
-                    minute: "2-digit",
-                    hour12: true,
-                  });
-
-                  return "0" + time === eventTime;
-                });
-
+              {timeSlots.map((time, index) => {
+                const reserved = checkReserved(time);
                 return (
                   <div
                     key={`time-${index}`}
@@ -236,8 +259,6 @@ const ConsultationPage = () => {
                         console.log(
                           new Date(`${formData.preferredDay} ${time}`)
                         );
-                      
-                        
 
                         // console.log({
                         //   ...formData,

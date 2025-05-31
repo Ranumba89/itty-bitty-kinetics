@@ -26,11 +26,10 @@ import EyeCoordinationGame from "./EyeCoordinationGame";
 import RunningKids from "./RunningKids";
 import Programs from "./Components/ProgramsComponents/Programs";
 import ConsultationPage from "./Components/ConsultationPage";
+import FeedingTherapy from "./Components/ServicesComponents/FeedingTherapy";
 
 function App() {
- 
   return (
-    
     <div className="App">
       <ScrollToTop />
       <Header />
@@ -46,7 +45,6 @@ function App() {
               <AreasOfSpecialty />
               {/* <OurHappyCustomers /> */}
               {/* <EyeCoordinationGame/> */}
-
             </div>
           }
         />
@@ -57,11 +55,9 @@ function App() {
         <Route path="/speech-therapy" element={<SpeechTherapy />} />
         <Route path="/physical-therapy" element={<PhysicalTherapy />} />
         <Route path="/occupational-therapy" element={<OccupationalTherapy />} />
-        <Route path="/programs" element={<Programs/>} />
-        <Route path="/consultation" element={<ConsultationPage/>} />
-
-
-
+        <Route path="/programs" element={<Programs />} />
+        <Route path="/consultation" element={<ConsultationPage />} />
+        <Route path="/feeding-therapy" element={<FeedingTherapy />} />
       </Routes>
       <Footer />
     </div>

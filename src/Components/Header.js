@@ -3,7 +3,12 @@ import Logo2 from "../Images/itty bitty logo 9.png";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useMediaQuery } from "@mantine/hooks";
 // import { Link } from "react-router-dom";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import {
+  NavLink,
+  useLocation,
+  useNavigate,
+  useSearchParams,
+} from "react-router-dom";
 import "./css/Header.css";
 import AnimatedLogo from "./AnimatedLogo";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -17,9 +22,13 @@ const Header = () => {
   const [isServices, setIsServices] = useState(false);
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+
   const location = useLocation();
   const isMobile = useMediaQuery("(max-width: 768px)");
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
+  const [initializing, setInitializing] = useState(true);
 
   const headerNavArray = [
     {
@@ -46,34 +55,31 @@ const Header = () => {
           name: "Physical Therapy",
           to: "/physical-therapy",
         },
+        {
+          name: "Feeding Therapy",
+          to: "/feeding-therapy",
+        },
       ],
     },
-    {
-      name: "Programs",
-      to: "/programs",
-    },
+    // {
+    //   name: "Programs",
+    //   to: "/programs",
+    // },
   ];
 
   const handleScrollToServices = () => {
-    navigate("/");
-    setTimeout(() => {
-      const section = document.getElementById("servicesSections");
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-    }, 200);
+    navigate("/?scrollElement=servicesSections");
+    const { scrollElement } = Object.fromEntries(searchParams);
+    const section = document.getElementById(scrollElement);
+
+    if (section) {
+      console.log("scrolling to services", section.offsetTop);
+      section.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
   };
+
   useEffect(() => {
-    const handleScroll = () => {
-      const section = document.getElementById("servicesSections");
-
-      if (section) {
-        const rect = section.getBoundingClientRect();
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    setInitializing(false);
   }, []);
 
   useEffect(() => {
@@ -88,6 +94,10 @@ const Header = () => {
     }
   }, [location]);
 
+  if (initializing) {
+    return null; // or a loading spinner
+  }
+
   return (
     <>
       {hamburgerMenuOpen ? (
@@ -97,6 +107,8 @@ const Header = () => {
           setActiveTab={setActiveTab}
           setServicesDropdownOpen={setServicesDropdownOpen}
           servicesDropdownOpen={servicesDropdownOpen}
+          aboutDropdownOpen={aboutDropdownOpen}
+          setAboutDropdownOpen={setAboutDropdownOpen}
         />
       ) : (
         <div className="sticky-container">

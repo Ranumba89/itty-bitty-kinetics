@@ -40,10 +40,12 @@ const IntroductionSection = () => {
   }, []);
   return (
     <motion.div
-      initial={{ scale: 0.5, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      className="page-container"
+    initial={{ scale: 0.8, opacity: 0, y: 10 }}
+    animate={{ scale: 1, opacity: 1, y: 0 }}
+    transition={{
+      duration: 0.6, 
+      ease: "easeOut",
+    }}
     >
       <div className="intro-container">
         <div className="left-grid">
@@ -166,7 +168,7 @@ const IntroductionSection = () => {
           </>
         )}
 
-        {/* <RunningKids /> */}
+        <RunningKids />
       </div>
     </motion.div>
   );

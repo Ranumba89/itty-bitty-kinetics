@@ -191,15 +191,16 @@ const WhyChooseUs = () => {
               dedication to measurable progress ensure that your child will
               thrive and reach their full potential.
             </p>
-            {/* <button className="learn-more-btn">Learn More</button> */}
-          </div>
-
-          <div className="why-trust-us">
             <p>
               At Itty Bitty Kinetics Therapy Group Inc., we are dedicated to
               providing personalized, high-quality care for your child’s
               developmental needs.
             </p>
+            {/* <button className="learn-more-btn">Learn More</button> */}
+          </div>
+
+          <div className="why-trust-us">
+            
             <h3 className="trust-us-header">Here's why families trust us</h3>
             <div className="trust-cards">
               {trustCardsArray.map((card, index) => (

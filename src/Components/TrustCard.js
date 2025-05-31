@@ -71,7 +71,13 @@ const TrustCard = ({
         {/* Back Side */}
         <div className="trust-card-back">
           <h4>{card.title}</h4>
-          <p>{card.content}</p>
+          <p
+            style={{
+              height: "100%",
+            }}
+          >
+            {card.content}
+          </p>
           <button
             className="learn-more-btn"
             onClick={() =>

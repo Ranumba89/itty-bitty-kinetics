@@ -10,7 +10,6 @@
   /* margin-top: 208px; */
   background-color: #93ffc3;
   padding: 72px 0px;
-
 }
 
 .book-now-header {
@@ -35,7 +34,7 @@
   margin-bottom: 35px;
 }
 
-.book-now-btn{
+.book-now-btn {
   width: fit-content;
   border-radius: 14px;
   font-weight: 600;
@@ -45,4 +44,37 @@
   align-items: center;
   gap: 9px;
   padding: 11px 13px;
+}
+
+@media (max-width: 768px) {
+  .book-now-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .book-now-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 113.99999999999999%;
+    letter-spacing: 0%;
+  }
+  .book-now-content {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 143%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 0 35px;
+  }
+  .book-now-btn{
+    padding: 15px 13px;
+  }
 }

@@ -21,7 +21,7 @@
   /* Logo styling */
   .header-logo {
     /* aspect-ratio: 1 / 1; */
-    height: 125px;
+    height: 85px;
     justify-self: start;
   }
   
@@ -45,8 +45,8 @@
   /* Right-side container styling */
   .rightSide-container {
     display: flex;
-    width: 260px;
-    height: 38px;
+    /* width: 260px; */
+    /* height: 38px; */
     gap: 14px;
     justify-self: flex-end;
   }
@@ -231,7 +231,7 @@
     margin: 0;
   }
   .header-logo {
-    height: 88px;
+    height: 70px;
   }
 }
 

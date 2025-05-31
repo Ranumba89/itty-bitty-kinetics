@@ -1,11 +1,19 @@
 /* Flip Card Container */
 .trust-card-container {
+  /* min-height: 400px; */
   display: flex;
-    perspective: 1000px; /* 3D Perspective */
+  perspective: 1000px; /* 3D Perspective */
+}
+@media (max-width: 768px) {
+  .trust-card-container {
+    height: 100%;
+    min-height: 300px;
+    width: 100%;
   }
-  
-  /* Flip Card */
-  /* .trust-card {
+}
+
+/* Flip Card */
+/* .trust-card {
     width: 278px;
     height: 100%;
     position: relative;
@@ -13,49 +21,55 @@
     transition: transform 0.6s ease-in-out;
   }
    */
-  /* When Flipped */
-  .trust-card.flipped {
-    transform: rotateY(180deg);
-  }
-  
-  /* Front & Back */
-  .trust-card-front,
-  .trust-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Hide the back when viewing the front */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    /* padding: 20px; */
-    /* background: rgba(255, 255, 255, 0.9); */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Back Side */
-  .trust-card-back {
-    transform: rotateY(180deg);
-    background: rgba(147, 255, 195, 0.9); /* Light Green */
-  }
-  
-  /* Learn More Button */
-  .learn-more-btn {
-    background-color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background 0.3s;
-  }
-  
-  .learn-more-btn:hover {
-    background: #93ffc3;
-  }
-  
+/* When Flipped */
+.trust-card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back */
+.trust-card-front,
+.trust-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* min-height: 500px; */
+  backface-visibility: hidden; /* Hide the back when viewing the front */
+  /* display: flex; */
+  /* flex-direction: column; */
+  display: grid;
+  grid-template-rows: 2fr 1.2fr 1.5fr;
+  padding-top: 10px;
+  align-items: center;
+  justify-items: center;
+  border-radius: 10px;
+  /* padding: 20px; */
+  /* background: rgba(255, 255, 255, 0.9); */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Back Side */
+.trust-card-back {
+  transform: rotateY(180deg);
+  background: rgba(147, 255, 195, 0.9); /* Light Green */
+  grid-template-rows: 0.35fr 1fr 0.4fr;
+  box-sizing: border-box;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.learn-more-btn:hover {
+  background: #93ffc3;
+}

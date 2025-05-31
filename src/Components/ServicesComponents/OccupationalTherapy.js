@@ -60,7 +60,7 @@ const OccupationalTherapy = () => {
     secondWord: "Therapy (OT)",
   };
   const headerParagrph = (
-    <p className="occupational-therapy-content">
+    <p>
       At Itty Bitty Kinetics Therapy Group Inc., we understand that parents
       often worry about their child’s ability to engage in everyday activities
       such as dressing, feeding, and playing with peers. Children with

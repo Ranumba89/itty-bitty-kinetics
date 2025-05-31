@@ -1,20 +1,29 @@
 .occupational-therapy-container {
   position: relative;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
 .occupational-therapy-intro-container {
   position: relative;
   display: grid;
-  max-width: 1137px;
-  grid-template-columns: 481px 541px;
+  /* max-width: 1248px; */
+  grid-template-columns: 1fr 1fr;
   margin-top: 51px;
   margin-bottom: 53px;
-  gap: 120px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding-left: auto;
+  padding-right: auto;
+  gap: 60px;
 }
 
 .occupational-therapy-leftside {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  /* max-width: 481px; */
 }
 
 .occupational-therapy-header {
@@ -26,14 +35,15 @@
   color: #150049;
   margin-bottom: 21px;
 }
-.occupational-therapy-content {
+/* .occupational-therapy-content {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
   line-height: 26.56px;
   text-align: left;
   margin-bottom: 48px;
-}
+  max-width: 481px;
+} */
 .occupational-therapy-book-btn {
   /* width: 236px; */
   width: fit-content;
@@ -46,6 +56,7 @@
   align-items: center;
   gap: 9px;
   padding: 11px 13px;
+  align-self: start;
 }
 
 .occupational-therapy-rightside {
@@ -71,6 +82,7 @@
   left: 134px;
   top: -31px;
 }
+
 .OT-pic {
   width: 541px;
   height: 496.36px;
@@ -138,7 +150,6 @@
   grid-template-columns: 616px auto;
   gap: 82px;
   max-width: 100vw;
-
 }
 .occupational-therapy-leftside-header {
   font-family: Poppins;
@@ -161,7 +172,6 @@
 }
 .occupational-therapy-signs-rightside {
   position: relative;
-
 }
 .occupational-therapy-signs-background {
   border-radius: 61px;
@@ -178,7 +188,7 @@
   bottom: 76px;
   border-radius: 0px 0px 0px 61px;
 }
-.skeleton-right-grid-circle1{
+.skeleton-right-grid-circle1 {
   position: absolute;
   border: 3px solid red;
   border-radius: 100%;
@@ -186,10 +196,9 @@
   width: 928px;
   right: -300px;
   top: -100px;
-  
 }
-.skeleton-right-grid-circle2{
-  border: 3px solid #93FFC380;
+.skeleton-right-grid-circle2 {
+  border: 3px solid #93ffc380;
   border-radius: 100%;
   aspect-ratio: 1/1;
   width: 460px;
