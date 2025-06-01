@@ -30,7 +30,7 @@ const AboutUsDropdown = ({
     {aboutDropdownOpen && (
       <div>
         {[
-          { name: "Meet the Founder", id: "meet-the-founder" },
+          { name: "Meet the Founder", id: "about-us-mobile-container" },
           { name: "Mission & Vision", id: "mission-vision" },
           // { name: "Our Approach", id: "our-approach" },
         ].map((section, idx) => (
@@ -40,9 +40,11 @@ const AboutUsDropdown = ({
             onClick={() => {
               navigate(navItem.to);
               setTimeout(() => {
-                document
-                  .getElementById(section.id)
-                  ?.scrollIntoView({ behavior: "smooth" });
+                const elementId = document.getElementById(section.id);
+                window.scrollTo({
+                  top: elementId.offsetTop - 70,
+                  behavior: "smooth",
+                });
               }, 200);
               setHamburgerMenuOpen(false);
               handleCloseDropdowns();

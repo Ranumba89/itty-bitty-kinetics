@@ -39,8 +39,10 @@ function App() {
           element={
             <div className="home-container">
               <IntroductionSection />
-              <WelcomeItty />
-              <WeDo />
+              <div className="padding-container">
+                <WelcomeItty />
+                <WeDo />
+              </div>
               <WhyChooseUs />
               <AreasOfSpecialty />
               {/* <OurHappyCustomers /> */}

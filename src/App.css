@@ -11,7 +11,6 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
-
 }
 /* Fade-in effect for pages */
 .page-container {
@@ -38,4 +37,13 @@
     justify-content: center;
   }
 
+  .padding-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0px 20px;
+  }
 }

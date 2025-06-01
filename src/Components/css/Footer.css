@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: auto auto;
   width: 100vw;
+  box-sizing: border-box;
   /* height: 382px; */
   background: #a8d8ff;
   font-family: Poppins;

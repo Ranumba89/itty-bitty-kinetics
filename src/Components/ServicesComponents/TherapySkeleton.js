@@ -205,16 +205,26 @@ const TherapySkeleton = ({
                 </ul>
               </div>
               <div className="occupational-therapy-signs-rightside">
-                <div className="occupational-therapy-signs-background"></div>
-                <img
-                  src={therapyData.therapySignsImg}
-                  alt={therapyData.therapyImgAlt}
-                  className="rightside-pic"
-                  style={{
-                    bottom:
-                      therapyData.therapyName === "Speech" ? "0px" : "76px",
-                  }}
-                />
+                <div className="occupational-therapy-signs-background">
+                  <div
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  >
+                    <img
+                      src={therapyData.therapySignsImg}
+                      alt={therapyData.therapyImgAlt}
+                      className="rightside-pic"
+                      style={{
+                        bottom:
+                          // therapyData.therapyName === "Speech" ? "0px" : "76px",
+                          "0px",
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
               <Swirly color={"green"} top={300} left={570} />
               <Swirly top={-50} left={0} />

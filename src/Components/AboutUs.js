@@ -52,6 +52,7 @@ const AboutUs = () => {
       {isMobile ? (
         <div
           className="aboutUs-mobile-container"
+          id="about-us-mobile-container"
           // style={{ backgroundColor: "red" }}
         >
           {/* <div
