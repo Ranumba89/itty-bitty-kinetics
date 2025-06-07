@@ -19,6 +19,34 @@ const FeedingTherapy = () => {
       eating, we're here to help them build confidence and joy around food!
       Contact us today to schedule a consultation and take the first step toward
       happier, healthier mealtimes!
+      <br />
+      <br />
+      We work closely with families to reduce mealtime stress, improve
+      nutrition, and encourage positive food experiences. Whether your child
+      avoids entire food groups, has difficulty chewing, or becomes anxious at
+      meals, our experienced therapists are here to help. Contact us today to
+      schedule a consultation and take the first step toward happier, healthier
+      mealtimes!
+      <br /> 
+      <br />
+      <p>
+        Feeding therapy isn’t just about getting kids to eat more — it’s about
+        creating a safe, encouraging space where they can explore new foods,
+        textures, and routines at their own pace. We support children with
+        conditions like autism, Down syndrome, prematurity, sensory processing
+        disorder, and picky eating tendencies — always working in partnership
+        with families.
+        <br />
+        <br />
+      </p>
+      <p>
+        Our sessions may include fun play-based activities to strengthen oral
+        muscles, strategies to reduce gagging or food refusal, posture and
+        positioning adjustments, and parent education for carryover at home.
+        Because progress is most powerful when it continues outside the clinic,
+        we empower caregivers with the tools and confidence to support their
+        child's feeding journey daily.
+      </p>
     </p>,
   ];
 
