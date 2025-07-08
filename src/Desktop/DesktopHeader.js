@@ -54,7 +54,10 @@ const DesktopHeader = ({
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active" : "")}
-          onClick={() => setActiveTab("home")}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            setActiveTab("home");
+          }}
         >
           Home
         </NavLink>
@@ -174,13 +177,17 @@ const DesktopHeader = ({
             </div>
           )}
         </div> */}
-        <div className="bookNow-container" onClick={() => {
-          navigate("/consultation");          
-        }}
-        style={{
-          cursor:"pointer",
-        }}
-        >Book Now</div>
+        <div
+          className="bookNow-container"
+          onClick={() => {
+            navigate("/consultation");
+          }}
+          style={{
+            cursor: "pointer",
+          }}
+        >
+          Book Now
+        </div>
       </div>
     </>
   );

@@ -8,15 +8,15 @@ const AreasOfSpecialty = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const specialties = [
-    "Early Start: Children 0-3 years of age",
-    "Autism Spectrum Disorder (ASD)",
-    "Torticollis",
-    "Sensory Processing Disorder",
-    "Cleft Palate",
-    "Speech and Language Delays",
-    "Cerebral Palsy",
+    "Pediatric Feeding Disorder",
+    "Avoidant/Restrictive Food Intake Disorder (ARFID)",
     "Developmental Delays",
-    "Feeding and Swallowing Disorders",
+    "Early Start: Children 0-3 years of age",
+    "Sensory Processing Disorder",
+    "School Readiness Skills",
+    "Fine Motor Skills",
+    "Gross Motor Skills",
+    "Self-Care Skills",
   ];
   return (
     <>
@@ -40,8 +40,7 @@ const AreasOfSpecialty = () => {
               ))}
             </ul>
           </div>
-          </div>
-       
+        </div>
       ) : (
         <div className="aop-container">
           <div className="aop-left">

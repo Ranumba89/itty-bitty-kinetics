@@ -178,6 +178,7 @@ const TherapySkeleton = ({
               <Star color={"white"} top={50} right={200} size={80} />
               <div className="occupational-therapy-middle-leftside">
                 <img
+                  className="occupational-therapy-middle-img"
                   src={therapyData.middleImg}
                   alt={therapyData.middleImgAlt}
                 />

@@ -83,8 +83,7 @@ const WelcomeItty = () => {
               Welcome to Itty Bitty Kinetics Therapy Group !
             </div>
             <div className="welcome-content">
-              We specialize in Early Start Occupational Therapy, Physical
-              Therapy, and Speech Therapy services, offering personalized care
+              We specialize in Pediatric Occupational Therapy services, offering personalized care
               both in-home, virtual and at our clinic. Our goal is to support
               children on their developmental journey, fostering growth,
               independence, and success.

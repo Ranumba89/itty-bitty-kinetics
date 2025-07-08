@@ -31,7 +31,7 @@ import FeedingTherapy from "./Components/ServicesComponents/FeedingTherapy";
 function App() {
   return (
     <div className="App">
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Header />
       <Routes>
         <Route
@@ -60,6 +60,7 @@ function App() {
         <Route path="/programs" element={<Programs />} />
         <Route path="/consultation" element={<ConsultationPage />} />
         <Route path="/feeding-therapy" element={<FeedingTherapy />} />
+        
       </Routes>
       <Footer />
     </div>

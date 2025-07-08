@@ -17,6 +17,7 @@ import { a } from "framer-motion/client";
 import MobileHeader from "../Mobile/MobileHeader";
 import DesktopHeader from "../Desktop/DesktopHeader";
 import HamburgerOverlay from "./HamburgerOverlay";
+import ClientResources from './ClientResources';
 const Header = () => {
   const [activeTab, setActiveTab] = useState("home"); // Track the active link
   const [isServices, setIsServices] = useState(false);
@@ -38,6 +39,24 @@ const Header = () => {
     {
       name: "About Us",
       to: "/about",
+      dropDown: [
+        {
+          name: "Founder",
+          to: "/founder",
+        },
+        {
+          name: "Our Story",
+          to: "/our-story",
+        },
+        {
+          name: "Mission & Vision",
+          to: "/mission-vision",
+        },
+        {
+          name: "ClientResources",
+          to: "/client-resources",
+        }
+      ],
     },
     {
       name: "Services",

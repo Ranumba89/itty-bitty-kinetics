@@ -1,7 +1,7 @@
 import TherapySkeleton from "./TherapySkeleton";
 import { motion } from "framer-motion";
-import PTPic from "../../Images/earlyFeeding.jpeg";
-import JuliaPT from "../../Images/Julia-PT.png";
+import PTPic from "../../Images/earlyFeeding Background Removed.png";
+import JuliaPT from "../../Images/middlePic2.png";
 import BabyCrawling from "../../Images/Baby-Crawling.png";
 const FeedingTherapy = () => {
   const signs = [

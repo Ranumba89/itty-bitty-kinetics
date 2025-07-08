@@ -112,20 +112,20 @@ const WhyChooseUs = () => {
             <p>
               At Itty Bitty Kinetics Therapy Group Inc., we are committed to
               providing high-quality, family-centered care that supports your
-              child’s development. Our Early Start Program offers Occupational,
-              Physical, and Speech Therapy to help children develop essential
-              skills for greater independence, self-regulation, and success. We
-              collaborate closely with families to ensure therapy is integrated
-              into everyday routines, empowering both children and caregivers.
-              Our team of experienced professionals provides evidence-based,
-              personalized interventions, offering flexible therapy options both
-              in-home and at our clinic. Each child receives an individualized
-              treatment plan tailored to their unique needs and goals, with a
-              focus on promoting long-term growth. We take a holistic approach,
-              addressing play skills, independence, and overall development to
-              support both immediate and future success. Our proven results and
-              dedication to measurable progress ensure that your child will
-              thrive and reach their full potential.
+              child’s development. Our program offers Occupational Therapy to
+              help children develop essential skills for greater independence,
+              self-regulation, and success. We collaborate closely with families
+              to ensure therapy is integrated into everyday routines, empowering
+              both children and caregivers. Our team of experienced
+              professionals provides evidence-based, personalized interventions,
+              offering flexible therapy options both in-home and at our clinic.
+              Each child receives an individualized treatment plan tailored to
+              their unique needs and goals, with a focus on promoting long-term
+              growth. We take a holistic approach, addressing play skills,
+              independence, and overall development to support both immediate
+              and future success. Our proven results and dedication to
+              measurable progress ensure that your child will thrive and reach
+              their full potential.
             </p>
           </div>
           <div className="why-trust-us">
@@ -200,7 +200,6 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="why-trust-us">
-            
             <h3 className="trust-us-header">Here's why families trust us</h3>
             <div className="trust-cards">
               {trustCardsArray.map((card, index) => (

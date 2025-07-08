@@ -13,6 +13,7 @@ import { CheckeredCircle } from "./CheckeredCircle";
 import { useMediaQuery } from "@mantine/hooks";
 import checkIcon from "../Images/Group 17.png";
 import { motion } from "framer-motion";
+import ClientResources from "./ClientResources";
 
 const AboutUs = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -179,8 +180,11 @@ const AboutUs = () => {
                     sessions and in everyday life. */}
                   </div>
                 </div>
+
               </motion.div>
             </div>
+                  <ClientResources/>
+
             {/* <img
               style={{ margin: "64px 0 34px 0" }}
               src={buildingBlock}
@@ -243,6 +247,30 @@ const AboutUs = () => {
             ourApproachPoints={ourApproachPoints}
             missionVisionPhilosphy={missionVisionPhilosphy}
           />
+          {/* <div className="policies-section" id="policies">
+            <h2 className="section-title">Our Policies</h2>
+            <ul className="policy-list">
+              <li>
+                <strong>Cancellation Policy:</strong> Please notify us at least
+                24 hours in advance to avoid a cancellation fee.
+              </li>
+              <li>
+                <strong>Privacy & Confidentiality:</strong> We comply with HIPAA
+                standards to protect client information.
+              </li>
+              <li>
+                <strong>Insurance:</strong> We accept United Health insurance.
+                Please contact us for verification.
+              </li>
+              <li>
+                <strong>Attendance:</strong> Consistent attendance is critical
+                to your child’s progress. Repeated no-shows may result in loss
+                of a scheduled slot.
+              </li>
+            </ul>
+          </div> */}
+
+          <ClientResources/>
         </div>
       )}
     </>
