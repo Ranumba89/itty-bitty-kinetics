@@ -110,22 +110,29 @@ const WhyChooseUs = () => {
           <div className="why-choose-us-header">
             <h2>Why Choose Us?</h2>
             <p>
-              At Itty Bitty Kinetics Therapy Group Inc., we are committed to
-              providing high-quality, family-centered care that supports your
-              child’s development. Our program offers Occupational Therapy to
-              help children develop essential skills for greater independence,
-              self-regulation, and success. We collaborate closely with families
-              to ensure therapy is integrated into everyday routines, empowering
-              both children and caregivers. Our team of experienced
-              professionals provides evidence-based, personalized interventions,
-              offering flexible therapy options both in-home and at our clinic.
-              Each child receives an individualized treatment plan tailored to
-              their unique needs and goals, with a focus on promoting long-term
-              growth. We take a holistic approach, addressing play skills,
-              independence, and overall development to support both immediate
-              and future success. Our proven results and dedication to
-              measurable progress ensure that your child will thrive and reach
-              their full potential.
+              Raising a child with feeding difficulties, sensory processing
+              challenges, or developmental delays can feel overwhelming —
+              especially when you’re navigating long waitlists, limited
+              insurance options, and providers who don’t see the full picture of
+              your daily life. You may find yourself jumping through hoops just
+              to get a few sessions, with little to no support in between, and
+              no real insight into your child’s home or community environment.
+              At Itty Bitty Kinetics Therapy Group, we believe your family
+              deserves more than just sessions. We’re here to remove the
+              guesswork and reduce the stress. Our concierge-style pediatric
+              occupational therapy model is built around you — offering care
+              in-home, in our calming Encino clinic, or in the community, so
+              therapy fits your life, not the other way around. With a
+              client-centered and family-focused approach, we collaborate
+              closely with you to create a clear and actionable plan tailored to
+              your child’s unique needs. From detailed parent coaching to
+              hands-on, real-world strategies, we ensure you feel empowered
+              every step of the way — not just during the session, but in
+              between sessions too. We’ve partnered with hundreds of families
+              who felt lost in the system — and helped them find clarity,
+              progress, and renewed confidence in their child’s development.
+              Because we believe in building a better tomorrow — with every
+              little movement.
             </p>
           </div>
           <div className="why-trust-us">
@@ -174,22 +181,29 @@ const WhyChooseUs = () => {
           <div className="why-choose-us-header">
             <h2>Why Choose Us?</h2>
             <p>
-              At Itty Bitty Kinetics Therapy Group Inc., we are committed to
-              providing high-quality, family-centered care that supports your
-              child’s development. Our Early Start Program offers Occupational,
-              Physical, and Speech Therapy to help children develop essential
-              skills for greater independence, self-regulation, and success. We
-              collaborate closely with families to ensure therapy is integrated
-              into everyday routines, empowering both children and caregivers.
-              Our team of experienced professionals provides evidence-based,
-              personalized interventions, offering flexible therapy options both
-              in-home and at our clinic. Each child receives an individualized
-              treatment plan tailored to their unique needs and goals, with a
-              focus on promoting long-term growth. We take a holistic approach,
-              addressing play skills, independence, and overall development to
-              support both immediate and future success. Our proven results and
-              dedication to measurable progress ensure that your child will
-              thrive and reach their full potential.
+              Raising a child with feeding difficulties, sensory processing
+              challenges, or developmental delays can feel overwhelming —
+              especially when you’re navigating long waitlists, limited
+              insurance options, and providers who don’t see the full picture of
+              your daily life. You may find yourself jumping through hoops just
+              to get a few sessions, with little to no support in between, and
+              no real insight into your child’s home or community environment.
+              At Itty Bitty Kinetics Therapy Group, we believe your family
+              deserves more than just sessions. We’re here to remove the
+              guesswork and reduce the stress. Our concierge-style pediatric
+              occupational therapy model is built around you — offering care
+              in-home, in our calming Encino clinic, or in the community, so
+              therapy fits your life, not the other way around. With a
+              client-centered and family-focused approach, we collaborate
+              closely with you to create a clear and actionable plan tailored to
+              your child’s unique needs. From detailed parent coaching to
+              hands-on, real-world strategies, we ensure you feel empowered
+              every step of the way — not just during the session, but in
+              between sessions too. We’ve partnered with hundreds of families
+              who felt lost in the system — and helped them find clarity,
+              progress, and renewed confidence in their child’s development.
+              Because we believe in building a better tomorrow — with every
+              little movement.
             </p>
             <p>
               At Itty Bitty Kinetics Therapy Group Inc., we are dedicated to

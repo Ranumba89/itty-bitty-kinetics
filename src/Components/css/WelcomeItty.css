@@ -6,7 +6,7 @@
   border-radius: 28px; /* Rounded corners */
   width: 100%; /* Match the Figma width */
   /* max-width: 1188px; */
-  height: 308.76px; /* Match the Figma height */
+  /* height: 308.76px; */
   margin-top: 10px;
   position: relative;
 }
@@ -30,7 +30,10 @@
 }
 
 .welcome-right {
+  
   display: flex;
+  flex: 1;
+  min-width: 350px;
   flex-direction: column; /* Stack header and content */
   justify-content: center; /* Vertically center the text */
   align-items: flex-start; /* Align to the left */
@@ -50,8 +53,10 @@
 }
 
 .welcome-content {
-  width: 484px; /* Match Figma width */
-  height: 115px; /* Match Figma height */
+  max-width: 100%; /* Ensure content fits within the container */
+ /* width: 100%;  */
+ overflow-wrap: break-word;
+  /* height: 115px;  */
   font-family: "Poppins", sans-serif; /* Font family */
   font-weight: 400; /* Regular font weight */
   font-size: 15px; /* Font size */

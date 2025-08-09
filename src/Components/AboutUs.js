@@ -18,10 +18,10 @@ import ClientResources from "./ClientResources";
 const AboutUs = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   const ourStoryPoints = [
-    "Providing culturally competent therapy that respects each child’s and family’s unique background, values, and experiences.",
-    "Expanding accessibility through insurance-based services and working toward additional funding opportunities for underserved populations",
-    "Emphasizing movement-based, child-led interventions that celebrate individual strengths and promote confidence, learning, and social participation.",
-    "Advocating for systemic change through our involvement in local, state and national organizations ensuring that all children have equitable access to developmental support.",
+    "Culturally responsive care that honors your family’s background, values, and experiences — because therapy should reflect the world your child lives in.",
+    "Accessible and insurance-based services, with ongoing efforts to expand funding opportunities for underserved communities.",
+    "Playful, movement-based, child-led therapy that taps into your child’s strengths and promotes joy, learning, and real-world progress.",
+    "Advocacy for equity and inclusion, through active participation in local, state, and national initiatives to ensure that every child has access to the support they deserve.",
   ];
   const ourApproachPoints = [
     "Building oral motor strength for safe chewing and swallowing.",
@@ -116,16 +116,19 @@ const AboutUs = () => {
             <div className="our-story-title">Our Story</div>
             <div className="our-story-content">
               <p>
-                At Itty Bitty Kinetics, we ditch the one-size-fits-all approach
-                and embrace each child’s uniqueness. Therapy should be fun,
-                engaging, and functional—whether that means strengthening little
-                fingers with messy play, improving coordination through obstacle
-                courses, or boosting independence with everyday routines. And
-                because progress happens beyond the clinic, I’m dedicated to
-                empowering parents with the tools and support they need to help
-                their child succeed at home, in school, and everywhere in
-                between.
+                At Itty Bitty Kinetics, we believe that every child is
+                wonderfully unique — and their therapy should be too. That’s why
+                we don’t believe in a one-size-fits-all approach. Whether it’s
+                strengthening little hands through messy play, building
+                confidence with movement-based activities, or mastering everyday
+                routines for greater independence, our care is designed to meet
+                your child where they are — and help them thrive. We’re not just
+                here to support your child — we’re here to support your whole
+                family. We equip parents with the tools, coaching, and real-life
+                strategies they need to feel confident supporting progress at
+                home, at school, and everywhere in between.
               </p>
+              <h3>Here’s what sets us apart:</h3>
               {ourStoryPoints.map((points, index) => {
                 return (
                   <li className="story-point" key={index}>
@@ -136,12 +139,11 @@ const AboutUs = () => {
               })}
 
               <div className="our-story-footer">
-                We believe that movement is medicine and that every child
-                deserves the opportunity to explore, grow, and succeed in a
-                supportive, inclusive environment. Through our dedication to
-                diversity, equity, and inclusion, we strive to create lasting
-                positive impacts for children and families in the Greater Los
-                Angeles area and beyond.
+                We believe movement is medicine — and that every child deserves
+                the chance to grow, explore, and reach their full potential in a
+                safe, inclusive environment. At Itty Bitty Kinetics, we’re not
+                just providing therapy. We’re building futures — with every
+                little movement.
               </div>
             </div>
             <div
@@ -180,10 +182,9 @@ const AboutUs = () => {
                     sessions and in everyday life. */}
                   </div>
                 </div>
-
               </motion.div>
             </div>
-                  <ClientResources/>
+            <ClientResources />
 
             {/* <img
               style={{ margin: "64px 0 34px 0" }}
@@ -270,7 +271,7 @@ const AboutUs = () => {
             </ul>
           </div> */}
 
-          <ClientResources/>
+          <ClientResources />
         </div>
       )}
     </>
@@ -383,16 +384,19 @@ const GridOccSection = ({
             <div className="our-story-title">Our Story</div>
             <div className="our-story-content">
               <p>
-                At Itty Bitty Kinetics, we ditch the one-size-fits-all approach
-                and embrace each child’s uniqueness. Therapy should be fun,
-                engaging, and functional—whether that means strengthening little
-                fingers with messy play, improving coordination through obstacle
-                courses, or boosting independence with everyday routines. And
-                because progress happens beyond the clinic, I’m dedicated to
-                empowering parents with the tools and support they need to help
-                their child succeed at home, in school, and everywhere in
-                between.
+                At Itty Bitty Kinetics, we believe that every child is
+                wonderfully unique — and their therapy should be too. That’s why
+                we don’t believe in a one-size-fits-all approach. Whether it’s
+                strengthening little hands through messy play, building
+                confidence with movement-based activities, or mastering everyday
+                routines for greater independence, our care is designed to meet
+                your child where they are — and help them thrive. We’re not just
+                here to support your child — we’re here to support your whole
+                family. We equip parents with the tools, coaching, and real-life
+                strategies they need to feel confident supporting progress at
+                home, at school, and everywhere in between.
               </p>
+              <h3>Here’s what sets us apart:</h3>
               {ourStoryPoints.map((points, index) => {
                 return (
                   <li className="story-point" key={index}>
@@ -403,12 +407,11 @@ const GridOccSection = ({
               })}
 
               <div className="our-story-footer">
-                We believe that movement is medicine and that every child
-                deserves the opportunity to explore, grow, and succeed in a
-                supportive, inclusive environment. Through our dedication to
-                diversity, equity, and inclusion, we strive to create lasting
-                positive impacts for children and families in the Greater Los
-                Angeles area and beyond.
+                We believe movement is medicine — and that every child deserves
+                the chance to grow, explore, and reach their full potential in a
+                safe, inclusive environment. At Itty Bitty Kinetics, we’re not
+                just providing therapy. We’re building futures — with every
+                little movement.
               </div>
             </div>
           </div>

@@ -22,37 +22,96 @@ const OccupationalTherapy = () => {
     "Difficulty with self-care tasks like eating, dressing, or brushing teeth",
     "Trouble with certain sensory experiences, such as reacting to the feel of clothing, haircuts, or bath",
   ];
+  const signsSections = [
+  {
+    icon: "🧠",
+    title: "Sensory sensitivities",
+    items: [
+      "Overreacts to sounds, textures, lights, or movement",
+      "Avoids messy play or refuses to touch certain materials",
+      "Seems constantly “on the go” or overly sensitive to change",
+    ],
+  },
+  {
+    icon: "🍴",
+    title: "Feeding challenges",
+    items: [
+      "Very selective eater (limited diet, avoids entire food groups)",
+      "Difficulty chewing or swallowing, gags easily",
+      "Refuses to try new textures or temperatures",
+    ],
+  },
+  {
+    icon: "🍀",
+    title: "Delays in fine or gross motor skills",
+    items: [
+      "Trouble holding a spoon, stacking blocks, or using crayons",
+      "Difficulty with balance, jumping, or climbing stairs",
+    ],
+  },
+   {
+    icon: "🧘‍♀️",
+    title: "Trouble with emotional regulation",
+    items: [
+      "Big meltdowns over small changes",
+      "Difficulty calming down without help",
+      "Struggles with transitions or routines"
+    ],
+  },
+];
+
+  const focus = [
+    "Developing fine and gross motor skills for better coordination and movement",
+    "Supporting emotional and sensory regulation to help your child feel safe and focused",
+    "Building independence in daily routines like feeding, grooming, and toileting",
+    "Encouraging social participation and confidence through play-based therapy",
+    "Coaching and empowering parents with tools, strategies, and ongoing support — not just during sessions, but every step of the way",
+  ];
 
   const middleSectionPTags = [
     <p>
-      At Itty Bitty Kinetics Therapy Group Inc., our Occupational Therapy (OT)
-      for children ages 0-3 focuses on helping your child develop the
-      foundational skills needed for daily living. OT plays a critical role in
-      supporting early development by working on essential skills such as motor
-      coordination, sensory regulation, and independence in self-care tasks. For
-      children with developmental delays, Autism Spectrum Disorder (ASD), Down
-      Syndrome, or Sensory Processing Disorder (SPD), our therapists create
-      personalized treatment plans to enhance fine motor skills, promote
-      engagement in play, and assist with tasks like feeding, dressing, and
-      grooming.
+      At Itty Bitty Kinetics Therapy Group Inc., we know how overwhelming it can
+      be to watch your child struggle with everyday activities like getting
+      dressed, mealtimes, or joining in play with peers. If your little one
+      faces developmental delays, sensory processing differences, or motor
+      coordination challenges, you’re not alone — and we’re here to help. Our
+      therapy services are thoughtfully designed to meet your child where they
+      are, reduce family stress, and build the skills that lead to confidence,
+      independence, and joyful connection. Because your child deserves support
+      that’s as unique as they are — and so do you.
     </p>,
     <p>
-      Our OT team also addresses sensory sensitivities in children with SPD,
-      providing strategies to help them manage sensory input and integrate it in
-      a way that promotes self-regulation. For children with feeding challenges,
-      OT plays a key role in supporting the development of oral motor skills and
-      improving feeding abilities, especially when sensory processing issues are
-      involved. We work on improving the child’s ability to tolerate different
-      textures, tastes, and temperatures, making mealtime a more comfortable and
-      successful experience. In addition, we assess the need for specialized
-      equipment, such as wheelchairs, splints, or communication aids, to support
-      your child’s mobility and communication needs, ensuring they have the
-      tools to engage in everyday activities.
+      At Itty Bitty Kinetics Therapy Group Inc., our pediatric occupational
+      therapy services are rooted in one simple belief: every child deserves the
+      opportunity to thrive in their daily life — at home, in the clinic, and
+      out in the world. Whether your child is navigating developmental delays,
+      sensory processing differences, motor coordination challenges, or
+      diagnoses such as Autism Spectrum Disorder or Down Syndrome, our job is to
+      meet your family with support that makes sense for your everyday reality.
     </p>,
     <p>
-      Through engaging, play-based interventions, our goal is to increase your
-      child's confidence, independence, and overall development, helping them
-      reach important milestones in a supportive, nurturing environment.
+      Occupational therapy helps children build the foundational skills they
+      need to participate in meaningful daily activities — from getting dressed
+      and feeding themselves to playing confidently with peers and managing big
+      emotions. Our therapists work across all environments — in-home, in our
+      Encino clinic, or out in the community — to make sure your child’s
+      progress shows up where it matters most: in real life.
+    </p>,
+    <p>
+      We focus on:
+      <ul>
+        {focus.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </p>,
+    <p>
+      Whether your child needs help learning to tolerate new textures at
+      mealtimes, managing transitions throughout the day, or improving their
+      ability to engage with others, we’re here to guide the process with
+      compassion, expertise, and a deep respect for your child’s individuality.
+      Because at Itty Bitty Kinetics, we’re not just working on skills — we’re
+      helping your family build a foundation for joy, growth, and connection.
     </p>,
   ];
   const headerWords = {
@@ -151,9 +210,8 @@ const OccupationalTherapy = () => {
         middleSectionPTags={middleSectionPTags}
         headerWords={headerWords}
         signs={signs}
-        headerParagrph = {headerParagrph}
-        therapyData = {therapyData}
-        
+        headerParagrph={headerParagrph}
+        therapyData={therapyData}
       />
     </motion.div>
   );

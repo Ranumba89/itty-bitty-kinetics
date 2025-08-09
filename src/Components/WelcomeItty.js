@@ -43,12 +43,15 @@ const WelcomeItty = () => {
               Welcome to Itty Bitty Kinetics <br /> Therapy Group !
             </div>
             <div className="welcome-content">
-
-            We specialize in Early Start Occupational Therapy, Physical Therapy,
-            and Speech Therapy services, offering personalized care both
-            in-home, virtual and at our clinic. Our goal is to support children
-            on their developmental journey, fostering growth, independence, and
-            success.
+              At Itty Bitty Kinetics, we specialize in concierge-style Pediatric
+              Occupational Therapy designed to meet the unique needs of every
+              child. We offer personalized, play-based therapy services in the
+              comfort of your home or at our warm and welcoming clinic in
+              Encino, California. Whether supporting sensory processing, feeding
+              development, or fine motor skills, our mission is to help children
+              grow with confidence, gain independence, and thrive in their
+              everyday environments. Let us partner with your family on your
+              child’s developmental journey—where care meets convenience.
             </div>
           </div>
 
@@ -83,10 +86,15 @@ const WelcomeItty = () => {
               Welcome to Itty Bitty Kinetics Therapy Group !
             </div>
             <div className="welcome-content">
-              We specialize in Pediatric Occupational Therapy services, offering personalized care
-              both in-home, virtual and at our clinic. Our goal is to support
-              children on their developmental journey, fostering growth,
-              independence, and success.
+              At Itty Bitty Kinetics, we specialize in concierge-style Pediatric
+              Occupational Therapy designed to meet the unique needs of every
+              child. We offer personalized, play-based therapy services in the
+              comfort of your home or at our warm and welcoming clinic in
+              Encino, California. Whether supporting sensory processing, feeding
+              development, or fine motor skills, our mission is to help children
+              grow with confidence, gain independence, and thrive in their
+              everyday environments. Let us partner with your family on your
+              child’s developmental journey—where care meets convenience.
             </div>
           </div>
         </div>
